@@ -1,6 +1,6 @@
 - hosts: all
   vars_file:
-  - user.yml
+  - vaults/user.yml
   tasks:
     - name: add group
       group:

@@ -1,5 +1,14 @@
 - hosts: all
+  var_files:
+    - vaults/ssh-pub.yml
+    - vaults/user.yml
   tasks:
+    - name: Adding local ssh keys
+      authorized_key:
+        user: "{{ user }}"
+        state: present
+        key: "{{ ssh-key }}"
+
     - name: Harden sshd configuration
       lineinfile:
         dest: /etc/ssh/sshd_config
