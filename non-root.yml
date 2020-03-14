@@ -1,0 +1,13 @@
+- hosts: all
+  tasks:
+    - name: add group
+      group:
+        name: power
+        state: present
+    - name: Give sudo powers to power group
+      lineinfile:
+        path: /etc/sudoers
+        state: present
+        regexp: "^%power"
+        line: "%power  ALL=(ALL:ALL) NOPASSWD:ALL"
+        validate: "/usr/sbin/visudo -cf %s"
