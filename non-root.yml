@@ -20,6 +20,6 @@
       user:
         name: "{{ user }}"
         group: power
-        password: "{{ password }}"
+        password: "{{ password | password_hash('sha512') }}"
         shell: /bin/bash
         append: yes
