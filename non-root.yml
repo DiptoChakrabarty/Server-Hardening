@@ -1,4 +1,6 @@
 - hosts: all
+  vars_file:
+  - user.yml
   tasks:
     - name: add group
       group:
@@ -8,6 +10,16 @@
       lineinfile:
         path: /etc/sudoers
         state: present
-        regexp: "^%power"
         line: "%power  ALL=(ALL:ALL) NOPASSWD:ALL"
         validate: "/usr/sbin/visudo -cf %s"
+    - name: Install sudo package
+      package:
+        name: sudo
+        state: present
+    - name: create user
+      user:
+        name: "{{ user }}"
+        group: power
+        password: "{{ password }}"
+        shell: /bin/bash
+        append: yes
