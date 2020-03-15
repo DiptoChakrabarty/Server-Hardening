@@ -1,0 +1,7 @@
+- hosts: all
+  tasks:
+    - name: Create LUKS container
+      luks_device:
+        device: "/dev/sdd1"
+        state: present
+        keyfile: "/vaults/luks.yml"
