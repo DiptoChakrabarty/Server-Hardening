@@ -1,0 +1,7 @@
+- hosts: localhost
+  tasks:
+  - name: change single mode user settings
+    lineinfile:
+      path: "/home/chuck/Desktop/Projects/server-hardening/bootfile.yml"
+      regexp: '^(.*)ExecStart=-/lib/systemd/systemd-sushell'
+      line: 'ExecStart=-/lib/systemd/systemd-sulogin-shell emergency'
