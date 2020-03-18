@@ -19,3 +19,9 @@ tasks:
   - name: "grub2-mkconfig MBR"
     command: update grub
     when: grub_efi.stat.exists == False
+  
+  - name: disable remote reboot
+    command: "{{ item }}"
+    with_items:
+      - "systemctl mask ctrl-alt-del.target"
+      - "systemctl daemon-reload"
