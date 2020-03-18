@@ -17,7 +17,7 @@
         state: present
       with_items:
         - regexp: "^#?PermitRootLogin"
-          line: "PermitRootLogin no"
+          line: "PermitRootLogin withput-password"
         - regexp: "^^#?PasswordAuthentication"
           line: "PasswordAuthentication no"
         - regexp: "^#?AllowAgentForwarding"
@@ -26,8 +26,12 @@
           line: "AllowTcpForwarding no"
         - regexp: "^#?MaxAuthTries"
           line: "MaxAuthTries 2"
+        - regexp: "^#?GatewayPorts"
+          line: "GatewayPorts no"
         - regexp: "^#?MaxSessions"
           line: "MaxSessions 2"
+        - regexp: "^#?Protocol"
+          line: "Protocol 2"
         - regexp: "^#?TCPKeepAlive"
           line: "TCPKeepAlive no"
         - regexp: "^#?UseDNS"
