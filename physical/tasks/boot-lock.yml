@@ -1,5 +1,4 @@
-- hosts: all
-  tasks:
+tasks:
     - name: Lock boot directory
       lineinfile:
         path: /etc/fstab
@@ -11,3 +10,4 @@
         owner: root
         group: root
         mode: 0600
+    

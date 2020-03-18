@@ -1,0 +1,9 @@
+tasks:
+  - name: change single mode user settings
+    lineinfile:
+      dest: "{{ items }}"
+      regexp: '^(.*)ExecStart=-/lib/systemd/systemd-sushell'
+      line: 'ExecStart=-/lib/systemd/systemd-sulogin-shell emergency'
+    with_items:
+      - "/lib/systemd/system/emergency.service"
+      - "/lib/systemd/system/rescue.service"

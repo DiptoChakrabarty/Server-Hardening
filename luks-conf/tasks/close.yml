@@ -4,4 +4,4 @@
       luks_device:
         device: "/dev/sdd1"
         state: "closed"
-        keyfile: "/vaults/luks.yml"
+        keyfile: "../../vaults/luks.yml/vaults/luks.yml"
