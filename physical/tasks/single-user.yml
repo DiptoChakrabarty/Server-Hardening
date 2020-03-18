@@ -17,5 +17,5 @@ tasks:
       - "password_pbkdf2 '{{ grub_user }}' '{{grub_password_v2_passwd}}' "
     
   - name: "grub2-mkconfig MBR"
-    command: grub2-mkconfig -o /boot/grub2/grub.cfg
+    command: update grub
     when: grub_efi.stat.exists == False
