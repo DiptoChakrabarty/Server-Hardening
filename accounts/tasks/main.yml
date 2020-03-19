@@ -1,0 +1,3 @@
+tasks:
+  - include: fail2ban.yml
+  - include: non-root.ymls
