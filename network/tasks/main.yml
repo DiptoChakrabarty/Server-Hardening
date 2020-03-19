@@ -1,2 +1,5 @@
----
-# tasks file for network
+tasks:
+  - include: ssh-conf.yml
+  - include: iptables-webserver.yml
+  - include: ipatbles-ssh.yml
+  - include: iptables-dropall.yml
