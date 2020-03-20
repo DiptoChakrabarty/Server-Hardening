@@ -1,6 +1,5 @@
-- hosts: all
-  tasks:
-    - name: remove luks container
-      luks_device:
-        device: "/dev/sdd1"
-        state: absent
+
+- name: remove luks container
+  luks_device:
+    device: "/dev/sdd1"
+    state: absent

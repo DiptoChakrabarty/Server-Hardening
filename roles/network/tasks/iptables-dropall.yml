@@ -1,5 +1,5 @@
-tasks:
-  - name: remove all other rules
-    iptables:
-      chain: INPUT
-      jump: DROP
+
+- name: remove all other rules
+  iptables:
+    chain: INPUT
+    jump: DROP

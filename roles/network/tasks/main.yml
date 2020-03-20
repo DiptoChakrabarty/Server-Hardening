@@ -1,5 +1,9 @@
 tasks:
-  - include: ssh-conf.yml
-  - include: iptables-webserver.yml
-  - include: ipatbles-ssh.yml
-  - include: iptables-dropall.yml
+  - name: ssh configuration
+    include: ssh-conf.yml
+  - name: setup webserver and add rules
+    include: iptables-webserver.yml
+  - name: setup ssh for network
+    include: ipatbles-ssh.yml
+  - name: remove all rules
+    include: iptables-dropall.yml
