@@ -1,4 +1,16 @@
 tasks:
+  - name: Remove swapfile from /etc/fstab
+    mount:
+      name: "{{ item }}"
+      fstype: swap
+      state: absent
+    with_items:
+      - swap
+      - none
+
+  - name: Disable swap
+    command: swapoff -a
+    when: ansible_swaptotal_mb > 0
   - name: add apt keys
     apt_key:
       url: 'https://packages.cloud.google.com/apt/doc/apt-key.gpg'
