@@ -16,7 +16,7 @@
     state: present
 - name: add apt repo
   apt_repository:
-    repo: 'deb http://apt.kubernetes.io/kubernetes-xenial main'
+    repo: 'deb http://apt.kubernetes.io/ kubernetes-xenial main'
     state: present
 - name: Install Kubernetes binaries
   apt: 
@@ -28,11 +28,6 @@
       - kubelet 
       - kubeadm 
       - kubectl
-
-- name: Configure node ip
-  lineinfile:
-    path: /etc/default/kubelet
-    line: KUBELET_EXTRA_ARGS=--node-ip={{ node_ip }}
 
 - name: Restart kubelet
   service:
