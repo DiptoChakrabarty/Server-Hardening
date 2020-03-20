@@ -1,3 +1,5 @@
-tasks:
-  - include: docker.yml
-  - include: kubernetes.yml
+- name: add docker
+  include: docker.yml
+
+- name: add kubernetes
+  include: kubernetes.yml
