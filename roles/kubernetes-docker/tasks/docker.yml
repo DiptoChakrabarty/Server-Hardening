@@ -24,3 +24,9 @@ tasks:
     apt:
       name: docker-ce
       state: present
+  - name: start and enable docker services
+    service:
+      name: "docker"
+      state: started
+      enabled: yes
+      

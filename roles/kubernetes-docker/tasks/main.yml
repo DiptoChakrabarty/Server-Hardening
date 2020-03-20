@@ -1,2 +1,3 @@
----
-# tasks file for kubernetes-docker
+tasks:
+  - include: docker.yml
+  - include: kubernetes.yml
