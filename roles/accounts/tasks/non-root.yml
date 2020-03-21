@@ -1,5 +1,5 @@
 vars_file:
-- vaults/user.yml
+- ../vars/user.yml
 
 - name: add group
   group:
