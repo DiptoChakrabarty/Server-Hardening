@@ -82,7 +82,7 @@ sudo apt install ansible
 
 Install ansible 
 
-<img src="images/install.png" alt="Logo" width="250" height="300">
+<img src="images/install.png" alt="Logo" width="400" height="400">
 
 
 Setup Docker and Kubernetes
