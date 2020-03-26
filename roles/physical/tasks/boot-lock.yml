@@ -4,6 +4,7 @@
       path: /etc/fstab
       state: present
       line: "LABEL=/boot /boot  ext2  defaults,ro  1 2"
+  
   - name: change permissions
     file:
       path: "/etc/grub.conf"
