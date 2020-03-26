@@ -100,16 +100,16 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 
 
-<!-- CONTACT -->
+
 ## Contact
 
-Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
+- Your Name - Dipto Chakrabarty
+- You can mail me at diptochuck123@gmail.com 
+- Project Link: [https://github.com/DiptoChakrabarty/Server-Hardening](https://github.com/DiptoChakrabarty/Server-Hardening)
 
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
 
 
 
-<!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
 * [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
 * [Img Shields](https://shields.io)
