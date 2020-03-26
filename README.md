@@ -87,7 +87,13 @@ Install ansible
 
 Setup Docker and Kubernetes
 
-<img src="images/docker-kube.png" alt="Logo" width="250" height="300">
+<img src="images/docker-kube.png" alt="Logo" >
+
+Setup Firewall Rules
+<img src="images/iptables.png" alt="Logo">
+
+Create Super User and setup fail2ban
+<img src="images/acc.png" alt="Logo" >
 
 
 
