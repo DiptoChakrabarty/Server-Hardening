@@ -56,7 +56,7 @@ To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
-* pip3
+* pip
 * AWS ec2 instance
 
 ### Installation
@@ -69,13 +69,19 @@ git clone https://github.com/DiptoChakrabarty/Server-Hardening
 
 3. Enter and configure for remote systems 
 
+4. Install Ansible
+```sh
+pip install ansible
+or 
+sudo apt install ansible
+```
+
 
 
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+Install ansible 
 
-_For more examples, please refer to the [Documentation](https://example.com)_
 
 
 
@@ -100,16 +106,16 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 
 
-
+<!-- CONTACT -->
 ## Contact
 
-- Your Name - Dipto Chakrabarty
-- You can mail me at diptochuck123@gmail.com 
-- Project Link: [https://github.com/DiptoChakrabarty/Server-Hardening](https://github.com/DiptoChakrabarty/Server-Hardening)
+Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
+
+Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
 
 
 
-
+<!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
 * [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
 * [Img Shields](https://shields.io)
